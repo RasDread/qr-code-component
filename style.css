@@ -12,12 +12,8 @@
 }
 
 body {
-  align-items: center;
   background: var(--light-gray);
-  display: flex;
   font-family: "Outfit", sans-serif;
-  height: 100vh;
-  justify-content: center;
 }
 
 h2,
@@ -44,7 +40,9 @@ p {
   border-radius: 20px;
   height: 497px;
   padding: 1rem;
-  max-width: 320px;
+  width: 320px;
+  margin-inline: auto;
+  margin-top: 9.5rem;
 }
 
 .qr-code-img img {
@@ -60,5 +58,11 @@ p {
 @media screen and (max-width: 320px) {
   .container {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    margin-top: 4.5rem;
   }
 }
